@@ -1,6 +1,8 @@
 body {
     background: #f7f7f7;
     font-family: verdana;
+    max-width: 900px;
+    margin: auto;
 }
 
 .user_imag{
@@ -42,10 +44,12 @@ a {
 .post_content{
     margin: 0;
     margin-top: 15px;
+    text-align: justify;
 }
 
 .post_imag{
     margin-top: 15px;
+    width: 100%;
 
 }
 
