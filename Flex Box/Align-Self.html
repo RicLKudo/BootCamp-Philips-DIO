@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .align-container{
+            align-items: center;
+        }
+
+        .direction{
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: royalblue;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Row</h2>
+    <section class="container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur elit.</div>
+        <div class="item auto">Item 4</div>
+        <div class="item auto">Sed ut perspiciati unde error</div>
+    </section>
+
+    <section class="container">
+        <div class="item end">AAA</div>
+        <div class="item center">1234</div>
+        <div class="item start">Lorem ipsum dolor sit amet, consectetur elit.</div>
+        <div class="item baseline">Item 4</div>
+        <div class="item end">Sed ut perspiciati unde omnis iste natus error</div>
+    </section>
+
+    <section class="container">
+        <div class="item baseline">AAAAAAA</div>
+        <div class="item center">123456</div>
+        <div class="item start">Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item end">Item 4789</div>
+        <div class="item stretch">Sed ut perspiciatis unde error</div>
+    </section>
+
+    <h2>Column</h2>
+    <section class="container align-container direction">
+        <div class="item auto">AAA</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item auto">Item 4</div>
+        <div class="item auto">Sed ut perspiciatis unde omnis iste natus error</div>
+    </section>
+
+    <section class="container direction">
+        <div class="item end">AAA</div>
+        <div class="item center">1234</div>
+        <div class="item start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item baseline">Item 4</div>
+        <div class="item end">Sed ut perspiciatis unde omnis iste natus error</div>
+    </section>
+
+    <section class="container direction">
+        <div class="item baseline">AAAAAAA</div>
+        <div class="item center">123456</div>
+        <div class="item start">Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item end">Item 4789</div>
+        <div class="item stretch">Sed ut perspiciatis unde error</div>
+    </section>
+    
+</body>
+</html>
