@@ -3,22 +3,16 @@ const background = document.querySelector('.background');
 let isJumping = false;
 let isGameOver = false;
 let position = 0;
+let score = 0;
 
 function handleKeyDown(event){
     if (event.keyCode === 38) {
         if (!isJumping) {
         jump();
-        pontua();
-        console.log('pressionou seta para cima!');
-        }
-    }
-}
-
-function pontua(){
-    let score = 0;
-    if(position >= 60){
         score += 10;
-        console.log(score);
+        //console.log('pressionou seta para cima!');
+        //console.log(score);
+        }
     }
 }
 
