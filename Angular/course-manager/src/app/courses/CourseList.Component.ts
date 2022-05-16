@@ -4,7 +4,7 @@ import { CourseService } from "./course.services";
 
 
 @Component({
-    selector: 'app-course-list',
+    
     templateUrl: './CourseList.Component.html'
 })
 
