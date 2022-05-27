@@ -10,7 +10,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterModule } from '@angular/router';
 import { Erro404Component } from './error-404/error-404.compnent';
 import { CourseInfoComponent } from './courses/CourseInfo.Component';
-
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,10 +25,11 @@ import { CourseInfoComponent } from './courses/CourseInfo.Component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([{
       path: 'courses', component: CourseListComponent      
     },{
-      path: 'courses/info/:id', component: CourseInfoComponent
+      path: 'course/info/:id', component: CourseInfoComponent
     },
     {
       path: '', redirectTo: 'courses', pathMatch: 'full'
